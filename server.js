@@ -29,7 +29,13 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-mongoose.connect("----------------------"); //heroku mongoose
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+mongoose.connect(MONGODB_URI, {
+  useMongoClient: true
+});
+
+// mongoose.connect("----------------------"); //heroku mongoose
 var db = mongoose.connection;
 
 db.on("error", function(error) {
