@@ -1,0 +1,45 @@
+.container {
+	margin: 0;
+	padding: 0;
+	min-width: 100%
+}
+
+.jumbotron {
+	background-image: url("../images/background.jpg");
+	background-size: cover;
+	min-height: 350px;
+	color: white;
+	position: relative;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.deleteNote {
+	display: inline-block;
+}
+
+.previousNotes {
+    display: inline-block;
+    width: 90%
+}
+
+#scrape {
+    margin: 8px 0px;
+}
+
+.form-inline {
+	margin-left: 8px;
+}
+
+.trans {
+	background-color:rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.trans .text-center {
+	padding-top: 120px;
+}
+
